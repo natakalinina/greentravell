@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <title>Green Travel – Відкривай Європу по-новому</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="logo">🌿 Green Travel</div>
+    <nav>
+      <a href="#about">Про нас</a>
+      <a href="#tours">Тури</a>
+      <a href="#benefits">Переваги</a>
+      <a href="#contacts">Контакти</a>
+    </nav>
+    <a class="call-btn" href="tel:+380991234567">+380 99 123 45 67</a>
+  </header>
+
+  <section class="hero">
+    <h1>Відкривай Європу по-новому</h1>
+    <p>Сучасні та відповідальні подорожі. Комфорт, природа та чесні ціни.</p>
+    <a href="#tours">Обрати подорож</a>
+  </section>
+
+  <main>
+    <section id="about">
+      <h2>Чому Green Travel?</h2>
+      <p>Ми — туристична агенція, яка спеціалізується на сучасних та відповідальних подорожах Європою. Ми поєднуємо комфорт, чесні ціни та любов до природи.</p>
+      <div class="features">
+        <div class="feature">🌿 Еко-френдлі</div>
+        <div class="feature">💶 Чесна ціна</div>
+        <div class="feature">🧘 Без стресу</div>
+      </div>
+    </section>
+
+    <section id="tours">
+      <h2>Наші тури</h2>
+      <div class="tours" id="toursContainer"></div>
+    </section>
+
+    <section id="reviews">
+      <h2>Відгуки наших клієнтів</h2>
+      <div class="features" id="reviewsContainer"></div>
+    </section>
+  </main>
+
+  <div class="modal" id="bookingModal">
+    <div class="modal-content" id="modalContent">
+      <button class="close-btn" onclick="closeModal()">×</button>
+      <h3 id="tourName"></h3>
+      <p id="tourDetails"></p>
+      <label>Дата початку</label>
+      <input type="date" id="dateFrom">
+      <label>Дата завершення</label>
+      <input type="date" id="dateTo">
+      <label>Кількість осіб</label>
+      <input type="number" id="people" min="1" value="1">
+      <div class="total" id="totalPrice"></div>
+      <button onclick="calculate()">Підтвердити бронювання</button>
+    </div>
+  </div>
+
+  <footer id="contacts">© 2025 Green Travel | info@greentravel.ua</footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
